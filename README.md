@@ -32,5 +32,4 @@ make clean
 
 ## TODO
 
-- When starting mininet with `make run`, I would get this error: `*** Error setting resource limits. Mininet's performance may be affected.`. Need to figure out why.
 - Try more exercises. Currently I have only tried the basic exercise.
