@@ -8,6 +8,7 @@ build:
 run:
 	docker run \
 	--name $(CONTAINER) \
+	-e DISPLAY=host.docker.internal:0 -v /tmp/.X11-unix:/tmp/.X11-unix \
 	-v `pwd`/tutorials:$(WORKDIR) -w $(WORKDIR) \
 	-it --rm --privileged $(IMAGE) bash
 
